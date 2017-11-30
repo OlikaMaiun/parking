@@ -13,6 +13,7 @@ require_once ('Moto.php');
 class ParkingMan
 {
     private $parking;
+    private $vehicle;
 
     public function setParking($parking){
         $this->parking = $parking;
@@ -25,7 +26,10 @@ class ParkingMan
     public function toGetOutOfParking($vehicleNumber){
         echo $this->parking->getOutOfParking($vehicleNumber);
     }
-//    public function scratchVehicle(){
-// }
+
+/*    public function toScratchVehicle($vehicle){
+        $this->vehicle = $vehicle;
+        echo $this->vehicle->scratchVehicle($vehicle);
+    }*/
 
 }

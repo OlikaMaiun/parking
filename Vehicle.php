@@ -17,6 +17,7 @@ class Vehicle
     private $type;
     private $number;
     private $year;
+   /* private $whole = true;*/
     const MOTO = "Moto";
     const CAR = "Car";
 
@@ -27,6 +28,15 @@ class Vehicle
         $this->year = $year;
         $this->number = $number;
     }
+
+   /* public function getWhole(){
+        return $this->whole;
+    }
+
+    public function setWhole($whole)
+    {
+        $this->whole = $whole;
+    }*/
 
     public function canRide(){
         return $this->ride = true;
